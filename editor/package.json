@@ -1,0 +1,57 @@
+{
+  "name": "blyx-backtest",
+  "displayName": "Blyx Backtest",
+  "description": "Evaluate forecasts in time order with a gap for delayed observations and disjoint test windows.",
+  "version": "0.1.0",
+  "publisher": "RahulChaube",
+  "license": "(MIT OR Apache-2.0)",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "blyx",
+    "backtest",
+    "framework"
+  ],
+  "homepage": "https://www.blyx-lang.space/packages/backtest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahulchaube1/blyx-backtest.git",
+    "directory": "editor"
+  },
+  "bugs": {
+    "url": "https://github.com/Rahulchaube1/blyx-backtest/issues"
+  },
+  "extensionDependencies": [
+    "RahulChaube.blyx-language"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "blyx",
+        "path": "./snippets/framework.json"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "backtest.start",
+        "title": "Get started with Backtest",
+        "description": "Evaluate forecasts in time order with a gap for delayed observations and disjoint test windows.",
+        "steps": [
+          {
+            "id": "run",
+            "title": "Run the Backtest example",
+            "description": "Create an empty .blyx file, insert blyx-backtest-demo and choose **Blyx: Run File**.\n[Open the documentation](https://www.blyx-lang.space/packages/backtest)",
+            "media": {
+              "markdown": "walkthrough.md"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

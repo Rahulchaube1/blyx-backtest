@@ -1,8 +1,12 @@
-<img src="assets/logo.png" width="88" height="88" alt="Blyx backtest logo">
+<img src="assets/logo.png" width="88" height="88" alt="A silver Arctic tern banks back towards its forked tail.">
 
 # Blyx Backtest
 
 A walk-forward evaluation framework for single-series forecasts, written in Blyx. Plan chronological training and test windows, leave a gap for delayed labels, and compare your forecasts with last-value and training-mean baselines on identical observations.
+
+## Editor extension
+
+Install **RahulChaube.blyx-backtest** to run the worked example and use the framework’s function completions in a Blyx file. Open an empty `.blyx` file, enter `blyx-backtest-demo`, then choose **Blyx: Run File**. [Editor downloads](https://www.blyx-lang.space/packages/backtest#editor) · [Download the extension](https://github.com/Rahulchaube1/blyxxxx/releases/download/framework-editors-v0.1.0/blyx-backtest-0.1.0.vsix) · [Starter with framework source](https://github.com/Rahulchaube1/blyxxxx/releases/download/framework-editors-v0.1.0/blyx-backtest-starter-0.1.0.zip)
 
 ## Try it
 
