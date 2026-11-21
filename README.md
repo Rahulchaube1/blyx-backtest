@@ -1,3 +1,5 @@
+<img src="assets/logo.png" width="88" height="88" alt="Blyx backtest logo">
+
 # Blyx Backtest
 
 A walk-forward evaluation framework for single-series forecasts, written in Blyx. Plan chronological training and test windows, leave a gap for delayed labels, and compare your forecasts with last-value and training-mean baselines on identical observations.
@@ -18,7 +20,7 @@ For demand `[10, 20, 30, 40, 50, 60, 70, 80]`, start with three observations, le
 From the directory containing your entry file:
 
 ```sh
-git clone --depth 1 --branch v0.1.0 https://github.com/Rahulchaube1/blyx-backtest.git vendor/backtest
+git clone --depth 1 --branch v0.1.1 https://github.com/Rahulchaube1/blyx-backtest.git vendor/backtest
 ```
 
 ```blyx
@@ -49,3 +51,7 @@ For the example, the first fold trains on positions 1 and 2, skips position 3 an
 The caller orders the series by time and chooses a gap that reflects actual data availability. For custom models, fit feature transformations and train on each fold’s training data before predicting the test horizon. The scorer can align submitted predictions and measure their errors. Only the model pipeline can establish what data went into those predictions.
 
 [Blyx ecosystem](https://www.blyx-lang.space/packages) · [Blyx compiler](https://github.com/Rahulchaube1/blyxxxx/releases/tag/v0.2.1)
+
+## Contribute
+
+Run the documented tests, then open a pull request with a small input that reproduces the behavior you want to change. Include the expected result and your Blyx compiler version. [Package issues](https://github.com/Rahulchaube1/blyx-backtest/issues) · [Ecosystem catalog](https://www.blyx-lang.space/packages)
